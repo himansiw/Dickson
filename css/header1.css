@@ -1,0 +1,92 @@
+.navbar-header {
+    float: left;
+}
+
+.navbar-left {
+    float: left;
+}
+
+.navbar-right {
+    text-align: right;
+}
+
+.navbar-top-links {
+    margin: 0;
+}
+
+.navbar-top-links li {
+    display: inline-block;
+}
+
+.navbar-top-links li:last-child {
+    margin-right: 6px;
+}
+/*nav bar right side height*/
+.navbar-top-links li a {
+    padding: 15px;
+    min-height: 30px;
+}
+/* nav bar right icon*/
+.navbar-top-links>li>a {
+    color: #999;
+}
+/* nav bar right icon focus*/
+.navbar-top-links>li>a:hover, .navbar-top-links>li>a:focus, .navbar-top-links>.open>a, .navbar-top-links>.open>a:hover, .navbar-top-links>.open>a:focus {
+    color: #fff;
+    background-color: #b5b5b5; /*icon padding color change in focus*/
+}
+
+.navbar-top-links .dropdown-menu li {
+    display: block;
+}
+
+.navbar-top-links .dropdown-menu li:last-child {
+    margin-right: 0;
+}
+/*nav bar heading dropdown menu*/
+.navbar-top-links .dropdown-menu li a {
+    padding: 3px 25px;
+    min-height: 0;
+
+}
+
+.navbar-top-links .dropdown-user {
+    right: 0;
+    left: auto;
+}
+/*tooltip start*/
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+[data-title]:after {
+    content: attr(data-title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    padding: 4px 4px 4px 8px;
+    color: #f8f5f5;
+    white-space: nowrap;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 0px 4px #1c1b1b;
+    -webkit-box-shadow: 0px 0px 4px  #1c1b1b;
+    box-shadow: 0px 0px 4px  #1c1b1b;
+    background-image: -moz-linear-gradient(top,#d4cece, #8d8b8b);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #d4cece),color-stop(1, #8d8b8b));
+    background-image: -webkit-linear-gradient(top, #d4cece, #8d8b8b);
+    background-image: -moz-linear-gradient(top,#d4cece, #8d8b8b);
+    background-image: -ms-linear-gradient(top, #d4cece, #8d8b8b);
+    background-image: -o-linear-gradient(top, #d4cece, #8d8b8b);
+    opacity: 0;
+    z-index: 99999;
+    visibility: hidden;
+}
+[data-title] {
+    position: relative;
+}
+
+
